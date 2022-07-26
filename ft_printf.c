@@ -6,7 +6,7 @@
 /*   By: rajacque <rajacque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 12:15:10 by rajacque          #+#    #+#             */
-/*   Updated: 2022/07/21 14:24:48 by rajacque         ###   ########.fr       */
+/*   Updated: 2022/07/26 13:46:57 by rajacque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	find_formats(va_list args, const char format, int *print_length)
 	else if (format == 'u')
 		print_unsigned(va_arg(args, unsigned int), print_length);
 	else if (format == 'x' || format == 'X')
-		ft_putnbr_base(va_arg(args, unsigned long), format, print_length);
+		ft_putnbr_base(va_arg(args, unsigned int), format, print_length);
 	else if (format == '%')
 		*print_length += ft_percent();
 	return (*print_length);

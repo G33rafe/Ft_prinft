@@ -6,7 +6,7 @@
 /*   By: rajacque <rajacque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 12:26:35 by rajacque          #+#    #+#             */
-/*   Updated: 2022/07/21 15:10:25 by rajacque         ###   ########.fr       */
+/*   Updated: 2022/07/26 13:20:51 by rajacque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,9 +76,9 @@ void	ft_putnbr_base(unsigned long nb, char format, int *print_length)
 		else
 		{
 			if (format == 'x' || format == 'p')
-				ft_printchar(nb - 10 - 'a', print_length);
+				ft_printchar(nb - 10 + 'a', print_length);
 			if (format == 'X')
-				ft_printchar(nb - 10 - 'A', print_length);
+				ft_printchar(nb - 10 + 'A', print_length);
 		}
 	}
 }
